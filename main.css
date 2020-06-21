@@ -1,0 +1,97 @@
+body
+{
+  margin: auto;
+  padding: 50px;
+  color: white;
+}
+
+/* ---- Set up site grid ----*/
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "logo banner banner"
+  "nav nav nav"
+  "main main side"
+  "footer footer footer";
+  grid-gap: 4px;
+
+}
+
+
+/* ---- End of grid setup ----*/
+
+/* -000- Area styling -000- */
+.box {
+  border: solid 1px #000;
+  padding: 20px;
+  background-color: brown;
+  border-radius: 50px;
+}
+/* Area colouring... */
+/* logo, footer background are the same color */
+.logo , .footer {
+  background-color: #945C2D; /* seiana brown */
+}
+
+/* set font on dark areas to white */
+.logo, .banner, .footer {
+  color: #fff;
+}
+/* Area specifics */
+
+
+
+.logo {
+  grid-area: logo;
+  font-family: "Roboto", sans-serif;
+  border-radius: 50px;
+  background-image: url()
+}
+.main  {
+  grid-area: main;
+  background-color: #945C2D; /* Seiana brown */
+  border-radius: 50px;
+}
+.banner {
+  grid-area: banner;
+  border-radius: 50px;
+}
+
+.navigation {
+  grid-area: navigation;
+  border-radius: 50px;
+  background-color: #945C2D; /* Seiana brown */
+  font-size: 125%;
+  text-align: center;
+}
+.side {
+  grid-area: side;
+  background-color: #1F252A; /* Dim gray */
+  border-radius: 50px;
+}
+.footer {
+  grid-area: footer;
+  border-radius: 50px;
+  text-align: right;
+}
+
+
+/* -000- End of area styling -000- */
+
+h1, h2, h3, h4 {
+  font-family: Roboto', sans-serif;
+}
+
+/* Navigation links */
+.nav a {font-weight: bold;}
+.nav a:link, .nav a:visited {color: #885566;}
+.nav a:hover {color: #604830; text-decoration: none;}
+
+
+/* links in page */
+a {font-weight: bold;}
+a:link{color: lightblue;} /* Light blue */
+a:visited{color: darkblue;} /* Dark blue */
+a:hover{color: #6E675F;} /* Dim gray */
